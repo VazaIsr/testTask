@@ -23,10 +23,12 @@ var checkForm = function(){
     };
 };
 
+$(window).on('load', function () {
+    setTimeout(preloader, 5000); 
+});
+
 $(document).ready(function(){
-    
-    setTimeout(preloader, 5000);     
-    
+        
     $('#main-form-submit').click(function(event){
         event.preventDefault();
         $('.main-form-message').empty().append('<img class="main-form-check" src="img/check.gif"><span>Authentication is in progress.</span>');
