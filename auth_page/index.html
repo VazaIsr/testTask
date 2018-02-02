@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Authentication page</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+   
+    <div id="preloader">
+        <img src="img/preloader2.gif" alt="">
+    </div>
+    
+    <section class="main hidden">
+        <div class="main-div-center">
+            <div class="main-left-div">
+                <img src="img/pedro-lastra-157071-min.png" alt="">
+            </div>
+            <div class="main-right-div">
+                <div class="main-form-div">
+                    <h3>Sign in</h3>
+                    <form method="post" id="main-form" name="main-auth-form" action="" enctype="multipart/form-data">
+                        <div class="main-form-message"></div>
+                        <input type="text" name="username" placeholder="Username">
+                        <input type="password" name="password" placeholder="Password">
+                        <button id="main-form-submit" type="submit">Sign in</button>
+                    </form>                    
+                </div>
+                <div id="main-form-greetings">
+                    <span>Welcome!</span>
+                </div>
+            </div>            
+        </div>
+        
+    </section>
+
+    <!-- jQuery -->
+    <script src="lib/jquery-3.2.0.min.js"></script>    
+    <!-- Main script -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
